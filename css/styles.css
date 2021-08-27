@@ -239,7 +239,7 @@ nav img {
   display: block;
   top: 0;
   right: 0;
-  background-image: url(Media/background-pattern.svg);
+  background-image: url(/media/background-pattern.svg);
   background-size: 45px 45px;
   background-repeat: repeat;
   width: 50%;
@@ -416,7 +416,7 @@ nav img {
 .services-section {
   text-align: center;
   color: #f9c939;
-  background: url(Media/background-shape.svg);
+  background: url(/Media/background-shape.svg);
   background-size: cover;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -436,7 +436,7 @@ nav img {
 
 .services-section::after {
   content: '';
-  background-image: url(Media/rocks-background-min.webp);
+  background-image: url(/Media/rocks-background-min.webp);
   background-size: cover;
   position: absolute;
   bottom: 0;
