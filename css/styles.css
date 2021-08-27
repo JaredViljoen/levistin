@@ -239,7 +239,7 @@ nav img {
   display: block;
   top: 0;
   right: 0;
-  background-image: url(../media/background-pattern.svg);
+  background-image: url(/media/background-pattern.svg);
   background-size: 45px 45px;
   background-repeat: repeat;
   width: 50%;
