@@ -360,10 +360,6 @@ nav img {
   transition: .1s ease;
 }
 
-.way-card .fingerprint {
-  visibility: hidden;
-}
-
 .way-card:hover .way-card-overlay {
   height: 100%;
 }
@@ -712,14 +708,6 @@ footer .footer-members {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-  }
-  .our-way-cards .fingerprint {
-    width: 2rem;
-    height: 100%;
-    position: absolute;
-    bottom: -84px;
-    right: 17px;
-    visibility: visible;
   }
   .services-section .serve-cards {
     -ms-grid-columns: auto;

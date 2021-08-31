@@ -328,9 +328,6 @@ nav{
 
       }
 
-      .fingerprint {
-        visibility: hidden;
-    }
 
         
         &:hover .way-card-overlay {
@@ -635,15 +632,6 @@ section {
         .our-way-cards {
             grid-template-columns: auto;
             align-items: center;
-
-            .fingerprint {
-                width: 2rem;
-                height: 100%;
-                position: absolute;
-                bottom: -84px;
-                right: 17px;
-                visibility: visible;
-            }
         }
        
 .services-section{
