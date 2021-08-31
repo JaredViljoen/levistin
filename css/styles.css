@@ -613,7 +613,8 @@ footer .footer-follow h4 {
 }
 
 footer .footer-follow i {
-  color: #f9c939;
+  color: #002e5c;
+  font-size: 1.2rem;
 }
 
 footer .footer-members {
