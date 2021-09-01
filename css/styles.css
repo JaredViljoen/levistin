@@ -644,7 +644,7 @@ footer .footer-members {
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
   }
-  header {
+  .site {
     overflow-x: hidden;
   }
   .nav-links {
