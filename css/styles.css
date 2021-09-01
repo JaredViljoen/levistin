@@ -6,6 +6,10 @@
   font-family: 'Open Sans', sans-serif;
 }
 
+html, body {
+  overflow-x: hidden;
+}
+
 section {
   padding: 4.5rem 9rem;
 }
@@ -56,13 +60,16 @@ nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   min-height: 15vh;
   background-color: white;
+  overflow-x: hidden;
+  padding: 0 9rem;
 }
 
 nav img {
@@ -643,9 +650,6 @@ footer .footer-members {
     cursor: pointer;
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
-  }
-  .site {
-    overflow-x: hidden;
   }
   .nav-links {
     position: absolute;

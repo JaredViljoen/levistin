@@ -12,6 +12,10 @@ $accentClr: hsla(1,66%,52%,100%);
     font-family: 'Open Sans', sans-serif;
 }
 
+html, body {
+    overflow-x: hidden;
+}
+
 
 
 section {
@@ -62,10 +66,12 @@ a {
 
 nav{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     min-height: 15vh;
     background-color: rgba(255, 255, 255, 1);
+    overflow-x: hidden;
+    padding: 0 9rem;
 
 
    
@@ -582,9 +588,6 @@ section {
             transition: all 0.3s ease-in-out;
         }
 
-    .site {
-        overflow-x: hidden;
-    }
 
 
     .nav-links {
