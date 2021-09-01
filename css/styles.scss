@@ -590,8 +590,7 @@ section {
 nav {
     padding: 0;
     justify-content: space-around;
-    overflow-x: hidden;
-    width: 100%;
+  
 }
 
     .nav-links {
@@ -646,7 +645,7 @@ nav {
 
 
         .our-way{
-            text-align: center;
+            text-align: left;
 
             .our-way-cards {
                 grid-template-columns: auto;
@@ -662,7 +661,7 @@ nav {
 
 .serve-cards {
     grid-template-columns: auto;
-    margin: 1rem 0;
+    margin: 3rem 0;
 
     .service-card {
         padding: 25px 25px 35px 25px;

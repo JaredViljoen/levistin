@@ -653,8 +653,6 @@ footer .footer-members {
     padding: 0;
     -ms-flex-pack: distribute;
         justify-content: space-around;
-    overflow-x: hidden;
-    width: 100%;
   }
   .nav-links {
     position: absolute;
@@ -714,7 +712,7 @@ footer .footer-members {
     height: 100%;
   }
   .our-way {
-    text-align: center;
+    text-align: left;
   }
   .our-way .our-way-cards {
     -ms-grid-columns: auto;
@@ -728,7 +726,7 @@ footer .footer-members {
   .services-section .serve-cards {
     -ms-grid-columns: auto;
         grid-template-columns: auto;
-    margin: 1rem 0;
+    margin: 3rem 0;
   }
   .services-section .serve-cards .service-card {
     padding: 25px 25px 35px 25px;
