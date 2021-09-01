@@ -44,7 +44,7 @@ h3 {
 }
 
 p {
-  font-size: clamp(0.8rem, 3vw, 1rem);
+  font-size: 1rem;
 }
 
 a {
@@ -395,7 +395,7 @@ nav img {
 
 .way-divider {
   position: absolute;
-  bottom: 0;
+  bottom: -5px;
   left: 0;
   width: 100%;
   overflow: hidden;
