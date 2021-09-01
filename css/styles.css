@@ -632,7 +632,8 @@ footer .footer-members {
 }
 
 @media screen and (max-width: 600px) {
-  body, html {
+  html, body {
+    position: relative;
     overflow-x: hidden;
   }
   section {

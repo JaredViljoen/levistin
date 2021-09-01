@@ -568,8 +568,9 @@ footer{
 
 @media screen and (max-width:600px) {
 
-body,html{
-     overflow-x: hidden;
+html, body{
+    position: relative;
+    overflow-x: hidden;
 }
 
 section {
