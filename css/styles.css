@@ -632,7 +632,7 @@ footer .footer-members {
 }
 
 @media screen and (max-width: 600px) {
-  header {
+  body, html {
     overflow-x: hidden;
   }
   section {
