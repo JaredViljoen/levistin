@@ -633,7 +633,6 @@ footer .footer-members {
 
 @media screen and (max-width: 600px) {
   html, body {
-    position: relative;
     overflow-x: hidden;
   }
   section {
@@ -644,6 +643,9 @@ footer .footer-members {
     cursor: pointer;
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
+  }
+  header {
+    overflow-x: hidden;
   }
   .nav-links {
     position: absolute;
