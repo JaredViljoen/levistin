@@ -6,6 +6,10 @@
   font-family: 'Open Sans', sans-serif;
 }
 
+body {
+  overflow: hidden;
+}
+
 section {
   padding: 4.5rem 9rem;
 }
