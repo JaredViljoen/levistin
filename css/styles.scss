@@ -568,9 +568,9 @@ footer{
 
 @media screen and (max-width:600px) {
 
-// body{
-//     overflow-x: hidden;
-// }
+header{
+     overflow-x: hidden;
+}
 
 section {
     padding: 4rem 3rem;
@@ -584,7 +584,6 @@ section {
 
 
     .nav-links {
-        overflow-x: hidden;
         position: absolute;
         top: 0px;
         top: 15vh;

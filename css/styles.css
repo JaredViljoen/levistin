@@ -632,6 +632,9 @@ footer .footer-members {
 }
 
 @media screen and (max-width: 600px) {
+  header {
+    overflow-x: hidden;
+  }
   section {
     padding: 4rem 3rem;
   }
@@ -642,7 +645,6 @@ footer .footer-members {
     transition: all 0.3s ease-in-out;
   }
   .nav-links {
-    overflow-x: hidden;
     position: absolute;
     top: 0px;
     top: 15vh;
