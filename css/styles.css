@@ -6,10 +6,6 @@
   font-family: 'Open Sans', sans-serif;
 }
 
-body {
-  overflow: hidden;
-}
-
 section {
   padding: 4.5rem 9rem;
 }
@@ -636,9 +632,6 @@ footer .footer-members {
 }
 
 @media screen and (max-width: 600px) {
-  body {
-    overflow-x: hidden;
-  }
   section {
     padding: 4rem 3rem;
   }
@@ -649,6 +642,7 @@ footer .footer-members {
     transition: all 0.3s ease-in-out;
   }
   .nav-links {
+    overflow-x: hidden;
     position: absolute;
     top: 0px;
     top: 15vh;
@@ -709,12 +703,17 @@ footer .footer-members {
   .intro-section video {
     height: 100%;
   }
-  .our-way-cards {
+  .our-way {
+    text-align: center;
+  }
+  .our-way .our-way-cards {
     -ms-grid-columns: auto;
         grid-template-columns: auto;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    margin: 4rem auto;
+    gap: 50px;
   }
   .services-section .serve-cards {
     -ms-grid-columns: auto;

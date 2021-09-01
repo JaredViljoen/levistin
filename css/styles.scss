@@ -12,9 +12,7 @@ $accentClr: hsla(1,66%,52%,100%);
     font-family: 'Open Sans', sans-serif;
 }
 
-body {
-    overflow: hidden;
-}
+
 
 section {
    padding: 4.5rem 9rem;
@@ -422,8 +420,6 @@ nav{
                 border-radius: 20px;
                 color: $primaryClr;
                 padding: 40px;
-                // min-width: 20rem;
-                // max-width: 27rem;
                 width: 100%;
                 min-height: 17rem;
                 box-shadow: 4px 4px 10px 0px rgba(0,0,0,0.4);
@@ -572,9 +568,9 @@ footer{
 
 @media screen and (max-width:600px) {
 
-body{
-    overflow-x: hidden;
-}
+// body{
+//     overflow-x: hidden;
+// }
 
 section {
     padding: 4rem 3rem;
@@ -588,6 +584,7 @@ section {
 
 
     .nav-links {
+        overflow-x: hidden;
         position: absolute;
         top: 0px;
         top: 15vh;
@@ -595,7 +592,6 @@ section {
         display: flex;
         flex-direction: column;
         align-items: center;
-     
         gap: 20px;
         width: 100%;
         padding: 3rem 3rem;
@@ -638,10 +634,18 @@ section {
 
         }
 
-        .our-way-cards {
-            grid-template-columns: auto;
-            align-items: center;
+
+        .our-way{
+            text-align: center;
+
+            .our-way-cards {
+                grid-template-columns: auto;
+                align-items: center;
+                margin: 4rem auto;
+                gap: 50px;
+            }
         }
+
        
 .services-section{
 
