@@ -922,8 +922,7 @@ footer .footer-members {
 }
 
 .inspirational {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.45)), to(rgba(255, 255, 255, 0.45))), url(../media/beach-inspirational.webp);
-  background-image: linear-gradient(rgba(255, 255, 255, 0.45), rgba(255, 255, 255, 0.45)), url(../media/beach-inspirational.webp);
+  background-image: url(../media/sea-inspirational.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   height: 50vh;
@@ -936,10 +935,11 @@ footer .footer-members {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: start;
+  overflow: hidden;
 }
 
 .inspirational h1 {
-  color: #002e5c;
+  color: white;
 }
 
 @media screen and (max-width: 900px) {
@@ -950,19 +950,23 @@ footer .footer-members {
 
 .services-int {
   overflow: hidden;
+  position: relative;
+}
+
+.services-int h2, .services-int p {
+  width: 70%;
+}
+
+@media screen and (max-width: 900px) {
+  .services-int h2, .services-int p {
+    width: 90%;
+  }
 }
 
 .services-int h2 {
   font-size: clamp(1.5rem, 5vw, 2rem);
   font-weight: 800;
-  width: 70%;
   color: #002e5c;
-}
-
-@media screen and (max-width: 900px) {
-  .services-int h2 {
-    width: 90%;
-  }
 }
 
 .services-int::before {
@@ -975,7 +979,7 @@ footer .footer-members {
   background-size: 45px 45px;
   background-repeat: repeat;
   width: 30%;
-  height: 450%;
+  height: 200%;
   z-index: -1;
 }
 
@@ -990,7 +994,7 @@ footer .footer-members {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   padding: 3rem 6rem;
-  border: solid 2px #eaeaea;
+  border: solid 2px #d3d3d3;
   margin: 3rem 0;
   background-color: white;
 }
@@ -1013,15 +1017,6 @@ footer .footer-members {
           align-items: center;
 }
 
-@media screen and (max-width: 375px) {
-  .service-desc .service-head {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse;
-  }
-}
-
 @media screen and (max-width: 900px) {
   .service-desc .service-head {
     -webkit-box-pack: start;
@@ -1031,6 +1026,15 @@ footer .footer-members {
         -ms-flex-align: start;
             align-items: flex-start;
     gap: 30px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .service-desc .service-head {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
   }
 }
 

@@ -757,20 +757,19 @@ footer {
 //Sub Pages
 
 .inspirational {
-  background-image: linear-gradient(
-      rgba(255, 255, 255, 0.45),
-      rgba(255, 255, 255, 0.45)
-    ),
-    url(../media/beach-inspirational.webp);
+  background-image: url(../media/sea-inspirational.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   height: 50vh;
   display: flex;
   align-items: center;
   justify-content: start;
+  overflow: hidden;
+
+
 
   h1 {
-    color: $primaryClr;
+    color: white;
   }
 
   @include md {
@@ -782,16 +781,21 @@ footer {
 
 .services-int {
   overflow: hidden;
+  position: relative;
 
-  h2 {
-    font-size: clamp(1.5rem, 5vw, 2rem);
-    font-weight: 800;
+  h2, p {
     width: 70%;
-    color: $primaryClr;
 
     @include md {
       width: 90%;
     }
+  }
+
+  h2 {
+    font-size: clamp(1.5rem, 5vw, 2rem);
+    font-weight: 800;
+    color: $primaryClr;
+
   }
 
   &::before {
@@ -804,7 +808,7 @@ footer {
     background-size: 45px 45px;
     background-repeat: repeat;
     width: 30%;
-    height: 450%;
+    height: 200%;
     z-index: -1;
   }
 }
@@ -814,7 +818,7 @@ footer {
   flex-direction: column;
   flex-wrap: wrap;
   padding: 3rem 6rem;
-  border: solid 2px #eaeaea;
+  border: solid 2px #d3d3d3;
   margin: 3rem 0;
   background-color: white;
 
@@ -827,14 +831,16 @@ footer {
     justify-content: space-between;
     align-items: center;
 
-    @include xs {
-      flex-direction: column-reverse;
-    }
+
 
     @include md {
       justify-content: start;
       align-items: flex-start;
       gap: 30px;
+    }
+
+    @include xs {
+      flex-direction: column-reverse;
     }
 
     .service-desc-h2 {
