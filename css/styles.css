@@ -953,12 +953,14 @@ footer .footer-members {
   position: relative;
 }
 
-.services-int h2, .services-int p {
+.services-int h2,
+.services-int p {
   width: 70%;
 }
 
 @media screen and (max-width: 900px) {
-  .services-int h2, .services-int p {
+  .services-int h2,
+  .services-int p {
     width: 90%;
   }
 }
@@ -1082,5 +1084,132 @@ footer .footer-members {
   .service-desc p {
     margin: 0 0;
   }
+}
+
+.about-int {
+  padding-bottom: 0;
+}
+
+.about-int h2,
+.about-int p {
+  width: 90%;
+}
+
+@media screen and (max-width: 900px) {
+  .about-int h2,
+  .about-int p {
+    width: 90%;
+  }
+}
+
+.about-int h2 {
+  font-size: clamp(1.5rem, 5vw, 2rem);
+  font-weight: 800;
+  color: #002e5c;
+}
+
+.our-way-bg {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.our-way-bg h2 {
+  color: #002e5c;
+  position: relative;
+  padding-left: 30px;
+}
+
+.our-way-bg h2::before {
+  content: "";
+  height: 100%;
+  width: 9px;
+  background-color: #f9c939;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+}
+
+.our-way-bg::after {
+  content: '';
+  background-image: url(../media/sailing-background.webp);
+  background-size: contain;
+  background-repeat: no-repeat;
+  z-index: -1;
+  display: block;
+  height: 100%;
+  width: 100vh;
+  position: absolute;
+  top: 80px;
+  right: -16rem;
+  border-radius: 30px 0 0 30px;
+}
+
+.our-way-bg .our-way-deets {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 50px;
+}
+
+.our-way-bg .our-way-deets .our-way-block {
+  background-color: white;
+  border-radius: 0 30px 30px 0;
+  padding: 3rem;
+  width: 80%;
+  -webkit-box-shadow: 4px 4px 11px -2px rgba(0, 0, 0, 0.4);
+          box-shadow: 4px 4px 11px -2px rgba(0, 0, 0, 0.4);
+  min-height: 16rem;
+}
+
+.our-way-bg .our-way-deets .our-way-block .our-way-head {
+  color: #002e5c;
+  margin-bottom: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.our-way-bg .our-way-deets .our-way-block .our-way-head svg {
+  height: 3rem;
+  width: auto;
+  fill: #f9c939;
+  float: left;
+  margin-right: 20px;
+}
+
+.our-way-bg .about-values {
+  padding-top: 0;
+  margin-left: 2.5rem;
+}
+
+.our-way-bg .about-values p {
+  margin-bottom: 30px;
+  width: 45%;
+}
+
+.our-way-bg .about-values .values-list li::marker {
+  content: '\f3a5';
+  font-family: 'Font Awesome 5 Free';
+  font-size: 1rem;
+  font-weight: regular;
+  color: #f9c939;
+}
+
+.our-way-bg .about-values .values-list li {
+  padding-left: 20px;
+  margin-bottom: 10px;
+  margin-left: 1rem;
 }
 /*# sourceMappingURL=styles.css.map */
