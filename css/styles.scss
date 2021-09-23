@@ -757,7 +757,7 @@ footer {
 //Sub Pages
 
 .inspirational {
-  background-image: url(../media/sea-inspirational.jpg);
+
   background-size: cover;
   background-repeat: no-repeat;
   height: 50vh;
@@ -765,10 +765,7 @@ footer {
   align-items: center;
   justify-content: start;
   overflow: hidden;
-
-  h1 {
-    color: white;
-  }
+  color: white;
 
   @include md {
     height: 30vh;
@@ -776,6 +773,10 @@ footer {
 }
 
 // Services Page
+
+.serve-insp {
+  background-image: url(../media/sea-inspirational.jpg);
+}
 
 .services-int {
   overflow: hidden;
@@ -883,6 +884,12 @@ footer {
 
 // About Page
 
+
+.about-insp {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../media/beach-inspirational.webp);
+
+}
+
 .about-int {
   padding-bottom: 0;
 
@@ -890,8 +897,8 @@ footer {
   p {
     width: 90%;
 
-    @include md {
-      width: 90%;
+    @include xs {
+      width: 100%;
     }
   }
 
@@ -899,13 +906,13 @@ footer {
     font-size: clamp(1.5rem, 5vw, 2rem);
     font-weight: 800;
     color: $primaryClr;
+
   }
 }
 
 .our-way-bg {
   position: relative;
-  width: 100%;
-  height: 100%;
+ 
 
   h2 {
     color: $primaryClr;
@@ -931,13 +938,18 @@ footer {
     background-size: contain;
     background-repeat: no-repeat;
     z-index: -1;
-    display: block;
     height: 100%;
-    width: 100vh;
+    width: 100%;
     position: absolute;
     top: 80px;
-    right: -16rem;
+    left: 65%;
     border-radius: 30px 0 0 30px;
+
+    @include sm {
+      background-size: 100% 100%;
+      top: 130px;
+    }
+
   }
   .our-way-deets {
 
@@ -955,7 +967,14 @@ footer {
       width: 80%;
       box-shadow: 4px 4px 11px -2px rgba(0,0,0,0.4);
       min-height: 16rem;
+
+      @include md {
+        width: 100%;
+      }
       
+      @include xs {
+        padding: 2rem;
+      }
     
       .our-way-head {
         color: $primaryClr;
@@ -964,12 +983,22 @@ footer {
         justify-content: start;
         align-items: center;
 
+        @include xs {
+          flex-direction: column;
+          align-items: flex-start;
+          justify-content: center;
+        }
+
         svg {
           height: 3rem;
           width: auto;
           fill: $secondaryClr;
           float: left;
           margin-right: 20px;
+
+          @include xs {
+            margin-bottom: 20px;
+          }
         }
       }
     }
@@ -979,9 +1008,27 @@ footer {
     padding-top: 0;
     margin-left: 2.5rem;
 
+    @include sm {
+      background-color:white;
+      margin-left: 0;
+      padding-top: 30px;
+    }
+
     p {
       margin-bottom: 30px;
       width: 45%;
+
+      @include lg {
+        width: 70%;
+      }
+
+      @include md {
+        width: 65%
+      }
+
+      @include sm {
+        width: 100%;
+      }
     }
 
     .values-list{

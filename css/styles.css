@@ -922,7 +922,6 @@ footer .footer-members {
 }
 
 .inspirational {
-  background-image: url(../media/sea-inspirational.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   height: 50vh;
@@ -936,9 +935,6 @@ footer .footer-members {
       -ms-flex-pack: start;
           justify-content: start;
   overflow: hidden;
-}
-
-.inspirational h1 {
   color: white;
 }
 
@@ -946,6 +942,10 @@ footer .footer-members {
   .inspirational {
     height: 30vh;
   }
+}
+
+.serve-insp {
+  background-image: url(../media/sea-inspirational.jpg);
 }
 
 .services-int {
@@ -1086,6 +1086,11 @@ footer .footer-members {
   }
 }
 
+.about-insp {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url(../media/beach-inspirational.webp);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../media/beach-inspirational.webp);
+}
+
 .about-int {
   padding-bottom: 0;
 }
@@ -1095,10 +1100,10 @@ footer .footer-members {
   width: 90%;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 375px) {
   .about-int h2,
   .about-int p {
-    width: 90%;
+    width: 100%;
   }
 }
 
@@ -1110,8 +1115,6 @@ footer .footer-members {
 
 .our-way-bg {
   position: relative;
-  width: 100%;
-  height: 100%;
 }
 
 .our-way-bg h2 {
@@ -1137,13 +1140,19 @@ footer .footer-members {
   background-size: contain;
   background-repeat: no-repeat;
   z-index: -1;
-  display: block;
   height: 100%;
-  width: 100vh;
+  width: 100%;
   position: absolute;
   top: 80px;
-  right: -16rem;
+  left: 65%;
   border-radius: 30px 0 0 30px;
+}
+
+@media screen and (max-width: 600px) {
+  .our-way-bg::after {
+    background-size: 100% 100%;
+    top: 130px;
+  }
 }
 
 .our-way-bg .our-way-deets {
@@ -1167,6 +1176,18 @@ footer .footer-members {
   min-height: 16rem;
 }
 
+@media screen and (max-width: 900px) {
+  .our-way-bg .our-way-deets .our-way-block {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .our-way-bg .our-way-deets .our-way-block {
+    padding: 2rem;
+  }
+}
+
 .our-way-bg .our-way-deets .our-way-block .our-way-head {
   color: #002e5c;
   margin-bottom: 30px;
@@ -1181,6 +1202,21 @@ footer .footer-members {
           align-items: center;
 }
 
+@media screen and (max-width: 375px) {
+  .our-way-bg .our-way-deets .our-way-block .our-way-head {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
 .our-way-bg .our-way-deets .our-way-block .our-way-head svg {
   height: 3rem;
   width: auto;
@@ -1189,14 +1225,46 @@ footer .footer-members {
   margin-right: 20px;
 }
 
+@media screen and (max-width: 375px) {
+  .our-way-bg .our-way-deets .our-way-block .our-way-head svg {
+    margin-bottom: 20px;
+  }
+}
+
 .our-way-bg .about-values {
   padding-top: 0;
   margin-left: 2.5rem;
 }
 
+@media screen and (max-width: 600px) {
+  .our-way-bg .about-values {
+    background-color: white;
+    margin-left: 0;
+    padding-top: 30px;
+  }
+}
+
 .our-way-bg .about-values p {
   margin-bottom: 30px;
   width: 45%;
+}
+
+@media screen and (max-width: 1200px) {
+  .our-way-bg .about-values p {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .our-way-bg .about-values p {
+    width: 65%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .our-way-bg .about-values p {
+    width: 100%;
+  }
 }
 
 .our-way-bg .about-values .values-list li::marker {
